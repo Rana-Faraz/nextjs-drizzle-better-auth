@@ -74,6 +74,8 @@ Copy the environment variables:
 cp .env.example .env.local
 ```
 
+> **⚠️ Important**: Generate a strong, random value for `BETTER_AUTH_SECRET`. This is crucial for session security and encryption. You can use `openssl rand -base64 32` to generate a secure secret.
+
 Configure your environment variables in `.env.local`:
 
 ```env
@@ -81,6 +83,7 @@ Configure your environment variables in `.env.local`:
 DATABASE_URL="postgresql://username:password@localhost:5432/dbname"
 
 # Authentication
+BETTER_AUTH_SECRET="your-secret-key-here"
 BETTER_AUTH_URL="http://localhost:3000"
 NEXT_PUBLIC_BETTER_AUTH_URL="http://localhost:3000"
 ```
@@ -297,6 +300,7 @@ Modify `components.json` for custom themes:
 
 ```env
 DATABASE_URL="your-production-database-url"
+BETTER_AUTH_SECRET="your-production-secret-key"
 BETTER_AUTH_URL="https://your-domain.com"
 NEXT_PUBLIC_BETTER_AUTH_URL="https://your-domain.com"
 ```
