@@ -55,7 +55,7 @@ A modern, full-stack Next.js template with authentication, database, and UI comp
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Rana-Faraz/nextjs-drizzle-better-auth
 cd nextjs-drizzle-better-auth
 
 # Install dependencies
